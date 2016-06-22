@@ -73,9 +73,15 @@ ul.topnav li.icon {display: none;}
 
 
 #jumbotron {
-	background-image:url('https://pbs.twimg.com/media/Cku9TbAVEAAUW0b.jpg:large');
-	/*original url: 
-	https://pixabay.com/static/uploads/photo/2016/02/26/00/11/courthouse-1223279_960_720.jpg */
-	background-repeat: no-repeat;
+	background: url('https://pixabay.com/static/uploads/photo/2016/02/26/00/11/courthouse-1223279_960_720.jpg') center bottom no-repeat; 
+	/*it means that it's centering your image horizontally, vertically, and to not repeat. */
+	/*background-size: cover; is telling your image to be the full width of the container it's in*/
+	/*original url: https://pbs.twimg.com/media/Cku9TbAVEAAUW0b.jpg:large
+	 */
 	background-size: cover;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+img {
+	opacity: 0.5;
 }
