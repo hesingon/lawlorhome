@@ -1,87 +1,126 @@
-
-/*Navigation bar*/
-/* Remove margins and padding from the list, and add a black background color */
-ul.topnav {
-	list-style-type: none;
+html, body {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	background-color: #333;
+	font-family: 'Merriweather', serif;
+	background-color: #1c1c1c;
 }
 
-/* Float the list items side by side */
-ul.topnav li {float: right;}
-
-/* Style the links inside the list items */
-ul.topnav li a {
-	display: inline-block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: 0.3s;
-	font-size: 17px;
+.container {
+	max-width: 850px;
+	margin: auto auto;	
 }
 
-/* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #111;}
-
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
-
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
-	ul.topnav li:not(:first-child) {display: none;}
-	ul.topnav li.icon {
-		float: right;
-		display: inline-block;
-	}
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:680px) {
-	ul.topnav.responsive {position: relative;}
-	ul.topnav.responsive li.icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	ul.topnav.responsive li {
-		float: none;
-		display: inline;
-	}
-	ul.topnav.responsive li a {
-		display: block;
-		text-align: left;
-	}
-}
-/*----------------------------------------------------------------------------------------------------------------*/
-
-/*Animated Search Bar*/
-#container {
-	position: relative;
-	height: 600px;
-}
-
-#form {
-	position: absolute;
-	left: 30%;
-	top: 30%;
-}
-
-/*----------------------------------------------------------------------------------------------------------------*/
-
-
-#jumbotron {
-	background: url('https://pixabay.com/static/uploads/photo/2016/02/26/00/11/courthouse-1223279_960_720.jpg') center bottom no-repeat; 
-	/*it means that it's centering your image horizontally, vertically, and to not repeat. */
-	/*background-size: cover; is telling your image to be the full width of the container it's in*/
-	/*original url: https://pbs.twimg.com/media/Cku9TbAVEAAUW0b.jpg:large
-	 */
+.top-part {
+	height: 500px;
+	background: url("https://pixabay.com/static/uploads/photo/2016/02/26/00/11/courthouse-1223279_960_720.jpg")center bottom no-repeat;
 	background-size: cover;
 }
 
-/*----------------------------------------------------------------------------------------------------------------*/
-img {
-	opacity: 0.5;
+.header {
+	max-width: 2000px;
+	background: rgba(0, 0, 0, 0.5);
+	height: 45px;
+	padding: 10px 0;
+	display: block;
+}
+
+.header .container {
+	max-width: 1000px;
+}
+
+ul a{
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+ul{
+	display: inline-block;
+	color: #fff;
+}
+
+#logo {
+	display: inline;
+	margin-right: 30px;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-weight: bold;
+	font-size: 25px;
+	color: #fff;
+}
+
+#logo a{
+	color: orange;
+}
+
+#logo a:hover{
+	text-decoration: none;
+	color: #4d94ff;
+}
+
+
+.pull-right li{
+	display: inline;
+	margin-left: 30px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.pull-right li a {
+	font-size: 15px;
+	color: #fff;
+}
+
+.pull-right li a:hover{
+	color: orange;
+	text-decoration: none;
+	border-bottom: 2px solid orange;
+}
+
+.jumbotron{
+	background-color: transparent;
+}
+
+.jumbotron .container {
+	background: rgba(0, 0, 0, 0.5);
+	max-width: 940px;
+
+}
+
+.container h2{
+	display: block;
+	font-size: 3em;
+	color: orange;
+	text-align: center;
+	text-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+#form {
+	margin-top: 120px;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+}
+
+#search-box {
+	width: 500px;
+}
+
+.column {
+	margin-top: 60px;
+}
+
+.col-md-6 {
+	text-align: center;
+}
+
+.col-md-6 img {
+	height: 210px;
+	width: 280px;
+}
+
+.col-md-6 h2 {
+	color: #4d94ff;
+	font-size: 2em;
+	margin-bottom: 3em;
 }
